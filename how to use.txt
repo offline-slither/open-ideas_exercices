@@ -1,0 +1,15 @@
+how does it work ?
+
+
+page_output = True/False enable or disabel output printing file with the data 
+
+there is an hardcoded pre-made list in the main file and and exterior file 
+to generate a srtore from the file use 
+ 
+marketmaker()
+
+to genereate one from your file use
+
+fromlist_marketmaker()
+
+none take input but in another version you'll be able to input a filename in fromlist_marketmaker() 
