@@ -93,7 +93,9 @@ def fromlist_marketmaker():
 				if page_output == True:
 					with open(Nom_fichier,"a") as file:
 						csv_writer = csv.writer(file)
-						csv_writer.writerow(f"{each},{readdict[each]} CR,{colored(status, color='green')}, -{applied}% = {int(readdict[each])-((int(readdict[each]) / 100)* applied)} CR")
+						text_result = f"{each},{readdict[each]} CR,{status}, -{applied}% = {int(readdict[each])-((int(readdict[each]) / 100)* applied)} CR"
+						# csv_writer.writerow(f"{each},{readdict[each]} CR,{colored(status, color='green')}, -{applied}% = {int(readdict[each])-((int(readdict[each]) / 100)* applied)} CR")
+						csv_writer.writerow([text_result])
 				status = "promo"
 				print(f"{each},{readdict[each]} CR,{colored(status, color='green')}, -{applied}% = {int(readdict[each])-((int(readdict[each]) / 100)* applied)} CR")
 				# print(f"{each},{readdict[each]} CR,{status}, - {applied}% = {readdict[each]-((readdict[each] / 100)* applied)} CR")
@@ -101,7 +103,9 @@ def fromlist_marketmaker():
 				if page_output == True:
 					with open(Nom_fichier,"a") as file:
 						csv_writer = csv.writer(file)
-						csv_writer.writerow(f"{each},{readdict[each]} CR,{colored(status, color='red')}, + {applied}% = {int(readdict[each])+((int(readdict[each]) / 100)* applied)} CR")
+						text_result = f"{each},{readdict[each]} CR,{status}, + {applied}% = {int(readdict[each])+((int(readdict[each]) / 100)* applied)} CR"
+						# csv_writer.writerow(f"{each},{readdict[each]} CR,{colored(status, color='red')}, + {applied}% = {int(readdict[each])+((int(readdict[each]) / 100)* applied)} CR")
+						csv_writer.writerow([text_result])
 				status = " quasi-rupture"
 				print(f"{each},{readdict[each]} CR,{colored(status, color='red')}, + {applied}% = {int(readdict[each])+((int(readdict[each]) / 100)* applied)} CR")
 				# print(f"{each},{readdict[each]} CR,{status}, + {applied}% = {readdict[each]+((readdict[each] / 100)* applied)} CR")
@@ -110,7 +114,9 @@ def fromlist_marketmaker():
 				if page_output == True:
 					with open(Nom_fichier,"a") as file:
 						csv_writer = csv.writer(file)
-						csv_writer.writerow(f"{each},{readdict[each]}")
+						text_result = f"{each},{readdict[each]}"
+						csv_writer.writerow([text_result])
+						# csv_writer.writerow(f"{each},{readdict[each]}")
 				status = " regular"
 				print(f"{each},{readdict[each]}")
 
