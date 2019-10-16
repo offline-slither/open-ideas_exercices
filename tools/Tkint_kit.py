@@ -53,4 +53,5 @@ liste1.pack()
 bouton_quitter.pack()
 fenetre.mainloop()
 
+# A text bloc exist to add text instead of a line
 
