@@ -1,0 +1,37 @@
+  body {
+    padding: 5px;
+    width: 33%;  
+    margin: 0 auto;
+}
+button {
+    width: 25%;
+    float: left;
+    font-size: 18px;
+    height: 36px;
+    margin: 0;
+    cursor: pointer;
+}
+#res {
+    text-align: right;
+    background-color: #f2f2f2;
+    border: 2px solid black;
+    height: 48px;
+    font-size: 20px;
+    width: calc(100%);
+    padding: 2px 5px;
+    font-family: monospace;
+}
+#btnClr, #btnEql {
+    background-color: darkgreen;
+    color: #fff;
+}
+
+.chiffre_but {
+    background-color: #fffae6;
+    color: brown;
+}
+
+#btnSum, #btnSub, #btnMul, #btnDiv {
+    background-color: black;
+    color: #fffae6;
+}
